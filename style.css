@@ -1,0 +1,299 @@
+* {
+    box-sizing: border-box;
+
+    margin: 0;
+
+    padding: 0;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+
+    background: #e8eaf6;
+
+    min-height: 100vh;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+}
+
+
+.container {
+    width: 100%;
+
+    max-width: 400px;
+
+    padding: 20px;
+}
+
+
+/* =========================
+   AGE BOX
+========================= */
+
+#ageBox {
+    background: white;
+
+    padding: 30px;
+
+    border-radius: 18px;
+
+    text-align: center;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+
+#ageBox h2 {
+    color: #4527a0;
+
+    margin-bottom: 10px;
+}
+
+
+#ageBox p {
+    color: #666;
+
+    margin-bottom: 20px;
+}
+
+
+.age-input {
+    display: flex;
+
+    gap: 10px;
+}
+
+
+.age-input input {
+    width: 100%;
+
+    padding: 13px;
+
+    border: 2px solid #ddd;
+
+    border-radius: 8px;
+
+    outline: none;
+
+    font-size: 15px;
+}
+
+
+.age-input input:focus {
+    border-color: #7e57c2;
+}
+
+
+.age-input button {
+    border: none;
+
+    padding: 0 18px;
+
+    border-radius: 8px;
+
+    background: #7e57c2;
+
+    color: white;
+
+    cursor: pointer;
+
+    font-weight: bold;
+}
+
+
+.age-input button:hover {
+    background: #5e35b1;
+}
+
+
+#ageMessage {
+    color: #e53935;
+
+    font-weight: bold;
+
+    margin-top: 15px;
+}
+
+
+/* =========================
+   CALCULATOR
+========================= */
+
+#calculator {
+    display: none;
+
+    background: #ffffff;
+
+    padding: 25px;
+
+    border-radius: 20px;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+
+#calculator h1 {
+    text-align: center;
+
+    color: #4527a0;
+
+    margin-bottom: 20px;
+}
+
+
+/* Display */
+
+#display {
+    width: 100%;
+
+    height: 70px;
+
+    margin-bottom: 15px;
+
+    padding: 15px;
+
+    border: none;
+
+    border-radius: 12px;
+
+    background: #ede7f6;
+
+    color: #222;
+
+    font-size: 28px;
+
+    text-align: right;
+
+    outline: none;
+}
+
+
+/* Buttons */
+
+.buttons {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 10px;
+}
+
+
+.buttons button {
+    height: 60px;
+
+    border: none;
+
+    border-radius: 12px;
+
+    font-size: 20px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+
+/* Number Buttons */
+
+.number {
+    background: #eeeeee;
+
+    color: #333;
+}
+
+
+.number:hover {
+    background: #d6d6d6;
+}
+
+
+/* Operator Buttons */
+
+.operator {
+    background: #ff9800;
+
+    color: white;
+}
+
+
+.operator:hover {
+    background: #ef6c00;
+}
+
+
+/* Clear */
+
+.clear {
+    background: #e53935;
+
+    color: white;
+}
+
+
+.clear:hover {
+    background: #c62828;
+}
+
+
+/* Delete */
+
+.delete {
+    grid-column: span 2;
+
+    background: #26a69a;
+
+    color: white;
+}
+
+
+.delete:hover {
+    background: #00897b;
+}
+
+
+/* Equal */
+
+.equal {
+    grid-column: span 2;
+
+    background: #43a047;
+
+    color: white;
+}
+
+
+.equal:hover {
+    background: #2e7d32;
+}
+
+
+/* Mobile */
+
+@media (max-width: 450px) {
+
+    .container {
+        padding: 15px;
+    }
+
+
+    #ageBox,
+    #calculator {
+        padding: 20px;
+    }
+
+
+    .buttons button {
+        height: 55px;
+
+        font-size: 18px;
+    }
+
+}
